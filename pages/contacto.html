@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Cuenta</title>
+    <link rel="shortcut icon" href="../images/draw_svg20211224-8647-tse8ye.svg.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!--Formulario para la creacion de usuario-->
+    <header>
+        <nav class="nav" id="nav--grilla"> 
+                <a href="../index.html"><img src="../images/logo_tecnomundo_2.png" alt="" class="nav__items--img"></a>
+            <ul class="nav__content">    
+                <a href="repair.html">Servicios</a>
+                <a href="productos.html">Productos</a>
+                <a href="soport.html">Soporte</a>
+                <a href="info.html">Información</a>
+            </ul>
+            </nav>
+    </header>
+    <main>
+        <section class="hero">
+        <div>
+        <h2>¡Completa el siguiente formulario y disfruta los beneficios de nuestra comunidad!</h2>
+        <li>¿Quieres seguir viendo los productos y precios de nuestros servicios? <a href="../index.html">Volver</a></li>
+        </div>
+        </section>
+     <form action="">
+        <fieldset>
+            <legend>Crea tu usuario</legend>
+            <div >
+                <label for="user">Crea tu usuario: </label>
+                <input type="text" id="user" required placeholder="Ejemplo: Luciano">
+            </div>        
+            <div>
+                <label for="password">Crea tu contraseña:</label>
+                <input type="password" id="password" required placeholder="Ejemplo: luciano123">
+            </div>
+            <div> 
+                <label for="email">Ingresa tu email:</label>
+                <input type="email" id="email" required placeholder="Ejemplo: lusiano@gmail.com">
+            </div>                  
+        </fieldset> 
+        <fieldset>
+            <legend>Preferencias</legend>
+            <div>
+                <p class="items">Como nosotros ofrecemos productos y articulos teconologicos queremos saber tus preferencias en caso de tener ofertas especiales</p>
+                
+                <label for="preferences">De que dispositivo te gustaria ver las ofertas primero:</label>
+                <select name="interest" id="preferences" multiple>
+                    <option value="Cel">Celulares</option>
+                    <option value="Pc">Computadoras de escritorio</option>
+                    <option value="Tab">Tablets</option>
+                    <option value="Con">Consolas</option>
+                    <option value="Lap">Computadoras portatiles</option>
+                </select>
+                </div>
+                <div>
+                <label for="coment">¿Quieres agreagar un comentario o duda de nuestra pagina?</label>
+                <input type="textarea" id="coment" placeholder="Ejemplo: Me gusta la pagina">
+                <input type="submit" >
+                </div>
+        </fieldset>
+    </form>    
+    </main>
+    <footer>
+        <section id="footer--grilla">
+            <div class="marcas">
+                <li><img  src="../images/hyperx.png" width="100%" height="100%" alt=""></li>
+                <li><img src="../images/logitech.png" width="100%" height="40%" alt=""></li>
+                <li><img src="../images/playstation.png" width="100%" height="50%" alt=""></li>
+            </div>
+            <div class="locales">
+                <h3>Nuestros locales:</h3>
+                <li>Arenales 4576</li>
+                <li>Av. Puerredon 1545</li>
+                <li>Av. Sante Fe 456</li>
+                <li>Juan B. Justo 2854</li>
+            </div>
+            <div class="icons">
+                <li><img src="../images/instagram.png" height="80%" alt=""></li>
+                <li><img src="../images/facebook.png" height="80%" alt=""></li>
+                <li><img src="../images/gorjeo.png" height="80%" alt=""></li>
+                <li><img src="../images/whatsapp.png" height="80%" alt=""></li>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

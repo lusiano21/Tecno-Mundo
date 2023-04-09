@@ -1,0 +1,72 @@
+emmet abbreviation: autocompletador del codigo
+
+Listas:HTML permite agrupar elementos que tienen más significado de forma conjunta, por lo que su significado conjunto es mayor que por separado. 
+Esto se denomina listas. ej...El menú de navegación de un sitio web
+Tipos de lista: 
+Lista no ordenadas:define una lista de artículos sin orden (viñetas). <ol>
+Listas ordenadas:define una lista ordenada de artículos (numéricas). <ul>   
+Listas de definición:define un artículo de una lista. <li>
+Los enlaces: también conocidos como links o anchors, se utilizan para relacionar partes del mismo documento. 
+Por defecto, se visualizan azules y subrayados. Para crear uno, es necesario utilizar la etiqueta de ancla <a> con el atributo “href”, 
+que establecerá el destino al que apunta.
+Tipos de enlaces:
+Los enlaces relativos: son aquellos que apuntan a páginas ubicadas dentro del mismo proyecto. 
+Si la página referenciada se encuentra en el mismo directorio, alcanza con mencionar el nombre de la misma para generar el enlace.
+En caso de que el archivo se encuentre en un directorio específico, el mismo deberá ser mencionado.
+Los enlaces absolutos: son aquellos cuyo destino apunta a un documento que está fuera del sitio, y debe ser especificado utilizando la URL completa.
+Los enlaces internos permiten referenciar secciones de tu página, para lo cual se utiliza el id.
+
+Multimedia en HTML:
+Se insertan con la etiqueta <img/>, que pertenece al grupo de las etiquetas que se cierran a sí mismas (con la barra al final).
+Para funcionar requiere, como mínimo, indicar en dónde está el archivo a mostrar. Eso se hace con el atributo “src” (el source o fuente), que respeta todas las reglas de ruteo vistas en los links. 
+Se comportan como elementos de línea, esto significa que se verán una al lado de la otra.
+El “alt” es un texto que debe representar la foto que se está visualizando. Tiene que ser conciso y breve, pero dejar en claro de qué se trata la imagen.
+
+Favicon:
+El favicon es un pequeño ícono que identifica un sitio web cuando está abierto en una pestaña o cuando es guardado como favorito.
+HTML recomendado para agregar dentro de tu etiqueta <head>:
+
+Etiqueta Iframe:
+Es un elemento HTML que permite insertar o incrustar un documento HTML dentro de un documento HTML principal.
+
+
+Formulario:Para insertar un formulario se usa la etiqueta <form>, que dentro lleva todos los controles que vayan al mismo destino. Un formulario requiere 3 atributos para funcionar:
+Action:En este atributo se indicará cuál es el archivo que recibe y procesa los datos. Debe ser de un lenguaje de los llamados “del lado del servidor” (PHP / ASP / JSP). 
+Si no se indica un valor, el Action será por defecto el mismo archivo donde está el formulario. 
+Method:Forma en la que se recopilan y envían los datos. Existen dos métodos comunes en el HTML:
+GET: la información viajará por la barra de direcciones a continuación del nombre del archivo.
+POST: la información viajará junto a los encabezados del HTML (será “invisible”).
+Si el method no se indica, por defecto será GET.
+Enctype:Cuando el valor del atributo method es post, el mismo es el  tipo MIME del contenido, que es usado para enviar el formulario al servidor. Los posibles valores son:
+application/x-www-form-urlencoded: será el valor por defecto si un atributo no está especificado.
+multipart/form-data: usar este valor si se está usando el elemento input con el atributo type ajustado a "file".
+text/plain (HTML5) Normalmente se utiliza para permitir el envío de archivos a través de un formulario.
+Existen tres controles generales para el ingreso de texto:
+Cajas de texto de una sola línea
+Cajas para el ingreso de contraseñas 
+Cajas para contenido multilínea
+Botones:
+Todos los botones son etiquetas  <input>, con distintos tipos de “Type”. El botón debe de estar dentro del <form> que afectará.
+Input de tipo “submit”: el que envía los datos al archivo indicado como Action.
+Input de tipo “reset”: El que vacía todo lo ingresado y resetea los campos.
+Input de tipo “button”: El que “no hace nada”, pensado para usarse con Javascript.
+Label:
+Define formalmente a cada elemento de un formulario. Esta etiqueta es de mucha ayuda para generar un formulario accesible. 
+Su principal atributo es “for”, que va a referenciar a “label” con su elemento del formulario. El valor del atributo “for” debe ser igual al valor del atributo “id” o “name” del elemento.
+**En la etiqueta input se puede agregar como atributo placeholder="" que sirve para hacer referncia de lo que se solicita al usuario poniendo un ejemplo 
+**tambien se puede agregar el atributo required que signifaca que es obligatorio que el usuario complete con la informacion necesaria para que se envie el archivo
+Combo-box o menú
+El combo-box se crea con la etiqueta <select><select/> que adentro tiene opciones que se incluyen con la etiqueta <option><option/>
+En el combo-box se puede elegir una opción aunque con el atributo multiple puedes cambiarlo.
+Las etiquetas <fieldset> y <legend> se utilizan en conjunto. La primera, tiene como objetivo crear grupos de elementos del formulario que posean un mismo propósito; 
+mientras que la segunda, define formalmente el propósito del elemento fieldset. Se estructuran de la siguiente manera:
+
+
+
+
+
+
+
+
+
+
