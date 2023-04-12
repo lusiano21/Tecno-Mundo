@@ -122,7 +122,7 @@ header{
     
 .items--colum {
     width: 100%;
-    margin: 2rem;
+    margin:2rem 0rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -341,9 +341,12 @@ header{
         width: 11rem;
         
     }
-    .items__img3{
-        height: 40%;
-        width: 80%;
+    .items__img3--fondo img{
+        height: 4rem;
+        width: 9rem;
+    }
+    .items--colum h2{
+        width: 75%;
     }
     #section--grilla{
         display: grid;
@@ -404,7 +407,7 @@ header{
 
 }
 @media screen and (max-width:768px) {
-    .items__main{
+    .items__main    {
         height: 20rem;
         font-size: 1, 5rem;
         color: black;
