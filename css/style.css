@@ -24,6 +24,11 @@ a:hover{
     transform: scale(0.9,0.9);
 
 }
+.link{
+    border-radius: 2%;
+    background-color: #62d5c1;
+    padding: 1rem;
+}
 video {
     height: 15rem;
 }
@@ -35,10 +40,13 @@ h2 {
 }
 /*<Pagina Index>*/
 /*<Header>*/
+header{
+    width: 100%;
+}
 .nav {
     background-color: #dbfbf5;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     z-index: 1;
     display: flex;
     flex-direction: row;
@@ -66,11 +74,14 @@ h2 {
 /*<main>*/
 /*<hero>*/
 .hero{
+    background-color:#45e4d1;
+    height:25rem ;
     padding-top: 8rem ;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 
 }
 .hero article{
@@ -91,29 +102,24 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
 }
-.items__img {
-    background-image: url(../images/reparacion.jpeg);
-    height: 30rem;
-    background-size: cover;
-    background-position: center center;
-    width: 75%;
-    grid-area: img;
+.items li {
+    width: 800px;
+    height: 20rem;
+
 }
 .items--rever {
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    justify-content: space-around;
 }
-.items__img2 {
-    background-image: url(../images/tienda2.jpg);
-    height: 30rem;
-    background-size: cover;
-    background-position: center center;
-    width: 75%;
-    grid-area: img2;
+.items--rever li {
+    height: 20rem;
 }
+    
 .items--colum {
     width: 100%;
     margin: 2rem;
@@ -147,13 +153,10 @@ h2 {
     justify-content: center;
     transform: skew(-5deg,5deg);
 }
-.items__img3 {
+.items__img3--fondo img {
     height: 6rem;
     width: 15rem;
-    background-size: cover;
-    background-position: center;
 }
-
 #info {
     grid-area: info;
 }
@@ -194,7 +197,7 @@ h2 {
     grid-template-rows: auto 1fr 1fr;
     grid-template-columns: repeat(6,1fr);
     grid-template-areas: ". titulo titulo titulo titulo ."
-                         ". vi1 vi1 vi2 vi2 ."
+                         "vi1 vi1 vi1 vi2 vi2 vi2"
                          ". vi3 vi3 vi3 vi3 .";
     justify-content: center;
 }
@@ -264,10 +267,18 @@ h2 {
     padding-bottom: 1rem;
 }
 @media screen and (min-width:1440px){
-.link{
-    border-radius: 2%;
-    background-color: #62d5c1;
-    padding: 1rem;
+.nav__link{
+        border-radius: 2%;
+        background-color: #62d5c1;
+        padding: 1rem;
+    }
+.items li {
+    width: 1200px;
+    height: 30rem;
+
+}
+.items--rever li {
+    height: 30rem;
 }
 .notic {
     margin: 2rem;
@@ -278,9 +289,7 @@ h2 {
     justify-items: center;
     row-gap: 1rem ;
 }
-
-}    
-
+}
 @media screen and (max-width:1024px){
     body{
         font-size: 90%;
@@ -303,6 +312,9 @@ h2 {
         flex-direction: column;
         align-items: center;
     }
+    .hero article{
+        width: 90%;
+    }
     .items--media {
         display: flex;
         flex-direction: column-reverse;
@@ -311,22 +323,23 @@ h2 {
         justify-content: center;
     }
     .items__main {
+        height: 25rem;
         font-size: 1, 5rem;
         color: black;
         text-decoration: none;
         width: 50%;
     }
-    .items__img{
-        height:50% ;
-        width:100% ;
+    .items li {
+        width: 600px;
+        height: 15rem;
     }
-    .items__img2{
-        height:50% ;
-        width:100% ;
+    .items--rever li {
+        height: 15rem;
     }
     .items__img3--fondo {
-        height: 75%;
-        width: 40%;
+        height: 10rem;
+        width: 11rem;
+        
     }
     .items__img3{
         height: 40%;
@@ -389,4 +402,20 @@ h2 {
         align-content: center;                
     }
 
+}
+@media screen and (max-width:768px) {
+    .items__main{
+        height: 20rem;
+        font-size: 1, 5rem;
+        color: black;
+        text-decoration: none;
+        width: 80%;
+    }
+    .items li {
+        width: 480px;
+        height: 12rem;
+    }
+    .items--rever li {
+        height: 12rem;
+    }
 }
