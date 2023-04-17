@@ -12,8 +12,9 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 main {
-    margin: 2rem 0rem;
+    margin: 2rem 0px;
     padding: 1vw;
+    width: 100%;
 } 
 a{
     text-decoration: none;
@@ -83,10 +84,12 @@ section {
 .btn{
     color: #45e4d1;
 }
-.caja2{
-    height: 14.063rem;
+.caja2 img{
+    
+    height: 14rem;
 }
 .caja2 li{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,7 +157,15 @@ section {
 .icons li {
     height: 3.5rem;
 }
+.iconos{
+    transform: scale(1,1);
+    transition: transform 1s;
+}
+.iconos:hover{
+    transform: scale(1.2,1.2);
+    filter: brightness(0) saturate(100%) invert(48%) sepia(95%) saturate(991%) hue-rotate(131deg) brightness(100%) contrast(101%);
 
+}
 #footer--grilla {
     background-color:#dbfbf5;
     display: flex;
@@ -164,13 +175,7 @@ section {
     padding-bottom: 1rem;
 }
 @media screen and (min-width:1440px){
-.img--soport {
-    width: 1200px;
-    height: 30rem;
-}
-.items--rever li {
-    height: 30rem;
-}
+
 .notic {
     margin: 2rem;
     display: grid;
@@ -260,17 +265,4 @@ section {
         align-items: center;
     }
    
-    .items__main    {
-        height: 20rem;
-        color: black;
-        text-decoration: none;
-        width: 80%;
-    }
-    .items li {
-        width: 480px;
-        height: 12rem;
-    }
-    .items--rever li {
-        height: 12rem;
-    }
 }
