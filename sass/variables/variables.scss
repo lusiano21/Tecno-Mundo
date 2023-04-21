@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Work+Sans:wght@500&display=swap');
+@mixin flex-column-center{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin mobile{
+    @media screen and (max-width:768px){
+        @content;
+    }
+}
+@mixin tablet{
+    @media (min-width:769px) and (max-width:1023px){
+        @content;
+    }
+}
+@mixin laptop{
+    @media screen and (max-width:1024px){
+        @content;
+    }
+}
+$texto:(
+    h1:1rem,
+	h3:0.8rem,
+	p:0.54rem,
+    a:0.55rem 
+);
+$multimedia:(
+    video:7.5rem,
+);
+
+@for $i from 1 to 6 {
+$media:256px;
+$letra:0.85;
+$multi:0.5;
+@media screen and (min-width:#{$media *$i}){
+    body{
+    @each $elemnto, $rem in $texto {
+        #{$elemnto} {
+            font-size: $rem * 1 + ($i - $letra*$i);
+        }
+            }
+@if  $i <=2  {
+      @each $elemnto, $rem in $multimedia {
+        #{$elemnto} {
+            height: ($rem * ( $i - $multi)) + 4;    
+        }
+            }
+    }
+@if  $i > 2  {
+        @each $elemnto, $rem in $multimedia {
+          #{$elemnto} {
+              height: $rem * 1.4 + ($i - $multi);    
+          }
+              }
+      }             
+               }
+}}
+
+
+
+
+
+

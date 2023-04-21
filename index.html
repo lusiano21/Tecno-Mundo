@@ -10,35 +10,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Electronica</title>
     <link rel="shortcut icon" href="./images/draw_svg20211224-8647-tse8ye.svg.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
-<body>
+<body class="body">
     <!----Estructura de la pagina -->
     <header>
         <nav class="navbar navbar-expand-md">
-            <div class="container-fluid fixed-top navd">
-                <a href="#"><img src="./images/logo_tecnomundo_2.png" alt="" class="nav__items--img"></a>
+            <div class="container-fluid fixed-top nave">
+                <a href="#"><img src="./images/logo_tecnomundo_2.png" alt="" class="nave__img"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="nav__content">
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav justify-content-evenly">
-                            <a class="nav__link" href="./pages/servicio.html">
+                <div class="nave__content">
+                    <div class="collapse navbar-collapse justify-content-evenly overflow-hidden" id="navbarNavAltMarkup">
+                            <a class="nave__link" href="./pages/servicio.html">
                                 Servicios
                             </a>
-                            <a class="nav__link" href="./pages/productos.html">
+                            <a class="nave__link" href="./pages/productos.html">
                                 Productos
                             </a>
-                            <a class="nav__link" href="./pages/soport.html">
+                            <a class="nave__link" href="./pages/soport.html">
                                 Soporte
                             </a>
-                            <a class="nav__link" href="./pages/info.html">
+                            <a class="nave__link" href="./pages/info.html">
                                 Información
                             </a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -47,62 +45,62 @@
         <section class="hero">
             <article>
                 <h1>Bienvenidos a Tecnomundo</h1>
-                <h2 class="text-body-secondary">Lo que ofrecemos</h2>
-                <li>Nuestra empresa se encarga de brindar el servicio de reparacion de celulares, tablets, consolas y
+                <h3 class="text-body-secondary">Lo que ofrecemos</h3>
+                <p>Nuestra empresa se encarga de brindar el servicio de reparacion de celulares, tablets, consolas y
                     computadoras de escritorio o portatiles.
                     Tambien vendemos articulos para todo tipo de dispositivos
-                    Si no estas registrado en la pagina tienes que completar un formulario:<a
-                        href="./pages/contacto.html"><span> Registrarme</span></a></li>
+                    Si no estas registrado en la pagina tienes que completar un formulario: <a class="registrar"
+                        href="./pages/contacto.html"><strong>Registrarme</strong></a></p>
             </article>
         </section>
     <main class="row g-0 d-flex flex-row-reverse justify-content-between">    
-        <section class="col-xl-8 row g-2">
+        <section class="col-xxl-8 row g-1">
         <article class="col col-12">
             <div style="max-width: 100%;">
-                <div class="row">
-                    <div class="col-md img" data-aos-duration="3000" data-aos="fade-right" data-aos-once="true">
-                        <img src="./images/reparacion.jpeg" alt="..." height="100%" width="100%">
+                <div class="row carta">
+                    <div class="col-md " data-aos-duration="3000" data-aos="fade-right" data-aos-once="true">
+                        <img class="img" src="./images/reparacion.jpeg" alt="..." height="100%" width="100%">
                     </div>
-                    <div class="col-md-4 col-xl-5 col-xxl-4 d-flex">
+                    <div class="col-md-4 col-xl-5 col-xxl-4 d-flex carta__texto">
                         <div class="card-body d-flex flex-column align-items-center justify-content-evenly">
-                            <h5 class="card-title">Servicio Tecnico</h5>
-                            <p class="card-text">Nuestro servicio de tecnico cuenta con la mayor teconologia en
+                            <h3 class="card-title">Servicio Tecnico</h3>
+                            <p class="card-text carta__parrafo">Nuestro servicio de tecnico cuenta con la mayor teconologia en
                                 reparacion
                                 acompoñada con los mejores tecnicos.</p>
-                            <a class="link" href="./pages/repair.html">Ver más</a>
+                            <a class="btn-c" href="./pages/repair.html">Ver más</a>
                         </div>
                     </div>
                 </div>
             </div>
         </article>
-        <article class="col col-12 ">
+        <article class="col gx-3 col-12 ">
             <div style="max-width: 100%;">
-                <div class="row d-flex flex-row-reverse">
+                <div class="row d-flex flex-row-reverse carta">
                     <div class="col-md" data-aos-duration="3000" data-aos="fade-left" data-aos-once="true">
-                        <img src="./images/tienda.jpg" alt="..." width="100%" height="100%">
+                        <img class="img" src="./images/tienda.jpg" alt="..." width="100%" height="100%">
                     </div>
-                    <div class="col-md-4 col-xl-5 col-xxl-4 d-flex">
+                    <div class="col-md-4 col-xl-5 col-xxl-4 d-flex carta__texto">
                         <div class="card-body d-flex flex-column align-items-center justify-content-evenly">
-                            <h5 class="card-title">Tienda</h5>
-                            <p class="card-text">Tenemos locales en todo la Capital de Buenos Aires: ofrecemos mucha
+                            <h3 class="card-title">Tienda</h3>
+                            <p class="card-text carta__parrafo">Tenemos locales en todo la Capital de Buenos Aires: ofrecemos mucha
                                 variedad,
                                 marcas y articulos para distintos dispositivos.</p>
-                            <a class="link" href="./pages/repair.html">Ver más</a>
+                            <a class="btn-c" href="./pages/repair.html">Ver más</a>
                         </div>
                     </div>
                 </div>
             </div>
         </article>
         </section>
-        <section class="card col-xl-4 d-flex justify-content-evenly">
+        <section class="card col-xxl-4 d-flex justify-content-evenly">
             <article>
             <div class="d-flex flex-column align-items-center" >
                 <img data-aos="zoom-out" src="./images/logo_tecnomundo_2.png" class="img-fluid" width="50%" alt="...">
             </div>    
             <div class="card-body d-flex flex-column align-items-center">
-                    <h5 class="card-title">Información</h5>
-                    <p class="card-text">Ofrecemos lo mejor para los que quieren ser los mejores.</p>
-                    <a class="link" href="./pages/info.html"> Ver más</a>
+                    <h3 class="card-title">Información</h3>
+                    <p class="card-text carta__parrafo">Ofrecemos lo mejor para los que quieren ser los mejores.</p>
+                    <a class="btn-c" href="./pages/info.html"> Ver más</a>
             </div>
             </article>
     </section>
@@ -115,39 +113,39 @@
         </svg>
     </div>
     <footer>
-        <section class="notic">
+        <section class="notic grid gap-3">
             <h2 class="notic__items">Mira las ultimas novedades </h2>
             <article data-aos="fade-right" data-aos-once="true" class="notic__items" id="video1">
-                <h3>No te pierdas de los mejores juegos</h3>
+                <h5>No te pierdas de los mejores juegos</h5>
                 <video src="./images/games.mp4.mp4" controls></video>
             </article>
             <article data-aos="fade-up" data-aos-once="true" class="notic__items" id="video2">
-                <h3>¡Mira las mejores sillas Gamer!</h3>
+                <h5>¡Mira las mejores sillas Gamer!</h5>
                 <video src="./images/top-5-mejores-sillas-gamer-2023-calidad-precio.mp4" controls></video>
             </article>
             <article data-aos="fade-left" data-aos-once="true" class="notic__items" id="video3">
-                <h3>¡Los mejores perifericos para vos!</h3>
+                <h5>¡Los mejores perifericos para vos!</h5>
                 <video src="./images/los-mejores-perifericos-para-2023.mp4" controls></video>
             </article>
         </section>
-        <section id="footer--grilla">
-            <div class="marcas items__footer">
-                <li><img src="./images/hyperx.png" width="100%" height="100%" alt=""></li>
-                <li><img src="./images/logitech.png" width="100%" height="40%" alt=""></li>
-                <li><img src="./images/playstation.png" width="100%" height="50%" alt=""></li>
+        <section class="footer row g-0">
+            <div class="col-md-4 col-5 row g-0 footer__icons align-items-center">
+                <li class="col-md-3 col-6"><img src="images/instagram.svg" height="100%" alt=""></li>
+                <li class="col-md-3 col-6"><img src="images/tik-tok.svg" height="100%" alt=""></li>
+                <li class="col-md-3 col-6"><img src="images/twitter.svg" height="100%" alt=""></li>
+                <li class="col-md-3 col-6"><img src="images/whatsapp.svg" height="100%" alt=""></li>
             </div>
-            <div class="locales items__footer">
-                <h3>Nuestros locales:</h3>
-                <li class="local1">Arenales 4576</li>
-                <li class="local2">Av. Puerredon 1545</li>
-                <li class="local3">Av. Sante Fe 456</li>
-                <li class="local4">Juan B. Justo 2854</li>
+            <div class="col-md-4 col-7 g-0 footer__locales d-flex flex-column align-items-center">
+                <li class="h6">Nuestros locales:</li>
+                <li>Arenales 4576</li>
+                <li>Av. Puerredon 1545</li>
+                <li>Av. Sante Fe 456</li>
+                <li>Juan B. Justo 2854</li>
             </div>
-            <div class="icons items__footer">
-                <li><img class="iconos" src="images/instagram.svg" height="80%" alt=""></li>
-                <li><img class="iconos" src="images/tik-tok.svg" height="80%" alt=""></li>
-                <li><img class="iconos" src="images/twitter.svg" height="80%" alt=""></li>
-                <li><img class="iconos" src="images/whatsapp.svg" height="80%" alt=""></li>
+            <div class="col-md-4 col-12 row g-0 footer__marcas">
+                <li class="col-4"><img src="./images/hyperx.png" class="img-fluid" alt=""></li>
+                <li class="col-5"><img src="./images/logitech.png" class="img-fluid" halt=""></li>
+                <li class="col-3"><img src="./images/playstation.png" class="img-fluid" alt=""></li>
             </div>
         </section>
     </footer>
