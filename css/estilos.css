@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Koulen&family=Work+Sans:wght@500&display=swap");
 @media screen and (min-width: 256px) {
   body h1 {
-    font-size: 1.15rem; }
+    font-size: 1.25rem; }
   body h3 {
-    font-size: 0.95rem; }
+    font-size: 1.05rem; }
   body p {
-    font-size: 0.69rem; }
+    font-size: 0.85rem; }
   body a {
-    font-size: 0.7rem; }
+    font-size: 0.87rem; }
+  body .icono {
+    height: 1.9rem; }
+  body .marca {
+    height: 2.55rem; }
   body video {
     height: 7.75rem; } }
 
@@ -17,47 +21,79 @@
   body h3 {
     font-size: 1.1rem; }
   body p {
-    font-size: 0.84rem; }
+    font-size: 0.9rem; }
   body a {
-    font-size: 0.85rem; }
+    font-size: 0.92rem; }
+  body .icono {
+    height: 1.95rem; }
+  body .marca {
+    height: 2.6rem; }
   body video {
     height: 15.25rem; } }
 
 @media screen and (min-width: 768px) {
   body h1 {
-    font-size: 1.45rem; }
+    font-size: 1.35rem; }
   body h3 {
-    font-size: 1.25rem; }
+    font-size: 1.15rem; }
   body p {
-    font-size: 0.99rem; }
+    font-size: 0.95rem; }
   body a {
-    font-size: 1rem; }
+    font-size: 0.97rem; }
+  body .icono {
+    height: 2rem; }
+  body .marca {
+    height: 2.65rem; }
   body video {
     height: 13rem; } }
 
 @media screen and (min-width: 1024px) {
   body h1 {
-    font-size: 1.6rem; }
-  body h3 {
     font-size: 1.4rem; }
+  body h3 {
+    font-size: 1.2rem; }
   body p {
-    font-size: 1.14rem; }
+    font-size: 1rem; }
   body a {
-    font-size: 1.15rem; }
+    font-size: 1.02rem; }
+  body .icono {
+    height: 2.05rem; }
+  body .marca {
+    height: 2.7rem; }
   body video {
     height: 14rem; } }
 
 @media screen and (min-width: 1280px) {
   body h1 {
-    font-size: 1.75rem; }
+    font-size: 1.45rem; }
   body h3 {
-    font-size: 1.55rem; }
+    font-size: 1.25rem; }
   body p {
-    font-size: 1.29rem; }
+    font-size: 1.05rem; }
   body a {
-    font-size: 1.3rem; }
+    font-size: 1.07rem; }
+  body .icono {
+    height: 2.1rem; }
+  body .marca {
+    height: 2.75rem; }
   body video {
     height: 15rem; } }
+
+@media screen and (min-width: 1536px) {
+  body h1 {
+    font-size: 1.5rem; }
+  body h3 {
+    font-size: 1.3rem; }
+  body p {
+    font-size: 1.1rem; }
+  body a {
+    font-size: 1.12rem; }
+  body .icono {
+    height: 2.15rem; }
+  body .marca {
+    height: 2.8rem; }
+  body video {
+    height: 16rem; } }
 
 * {
   margin: 0px;
@@ -85,7 +121,7 @@ a:hover {
 
 .btn-c {
   background-color: #62d5c1;
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 10%; }
   @media screen and (max-width: 425px) {
     .btn-c {
@@ -163,17 +199,21 @@ section {
 .footer {
   background-color: #dbfbf5;
   margin-top: 1rem;
-  padding-bottom: 1rem; }
+  padding-bottom: 0.5rem; }
   .footer__locales {
     background-color: #80e1d0; }
+    @media screen and (max-width: 768px) {
+      .footer__locales {
+        background-color: #dbfbf5; } }
+  @media screen and (max-width: 768px) {
+    .footer__marcas {
+      background-color: #80e1d0;
+      height: 3.5rem; } }
   .footer__marcas li {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .footer__marcas li img {
-      width: 12rem; }
   .footer__icons li {
-    height: 2.5rem;
     display: flex;
     justify-content: center; }
     .footer__icons li img {
@@ -191,19 +231,9 @@ section {
 
 @media screen and (max-width: 1024px) {
   .hero article {
-    width: 90%; }
-  .icons li {
-    height: 2rem; }
-  video {
-    height: 23vh; } }
+    width: 90%; } }
 
 @media screen and (max-width: 767px) {
-  .marcas li img {
-    width: 10rem; }
-  .locales {
-    background-color: #dbfbf5; }
-  .marcas {
-    background-color: #80e1d0; }
   .nave__content {
     width: 100%; }
   .nave__link {

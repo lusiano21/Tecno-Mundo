@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Work+Sans:wght@500&display=swap");
+@media screen and (min-width: 256px) {
+  body h1 {
+    font-size: 1.25rem;
+  }
+  body h3 {
+    font-size: 1.05rem;
+  }
+  body p {
+    font-size: 0.85rem;
+  }
+  body a {
+    font-size: 0.87rem;
+  }
+  body .icono {
+    height: 1.9rem;
+  }
+  body .marca {
+    height: 2.55rem;
+  }
+  body video {
+    height: 7.75rem;
+  }
+}
+@media screen and (min-width: 512px) {
+  body h1 {
+    font-size: 1.3rem;
+  }
+  body h3 {
+    font-size: 1.1rem;
+  }
+  body p {
+    font-size: 0.9rem;
+  }
+  body a {
+    font-size: 0.92rem;
+  }
+  body .icono {
+    height: 1.95rem;
+  }
+  body .marca {
+    height: 2.6rem;
+  }
+  body video {
+    height: 15.25rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  body h1 {
+    font-size: 1.35rem;
+  }
+  body h3 {
+    font-size: 1.15rem;
+  }
+  body p {
+    font-size: 0.95rem;
+  }
+  body a {
+    font-size: 0.97rem;
+  }
+  body .icono {
+    height: 2rem;
+  }
+  body .marca {
+    height: 2.65rem;
+  }
+  body video {
+    height: 13rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body h1 {
+    font-size: 1.4rem;
+  }
+  body h3 {
+    font-size: 1.2rem;
+  }
+  body p {
+    font-size: 1rem;
+  }
+  body a {
+    font-size: 1.02rem;
+  }
+  body .icono {
+    height: 2.05rem;
+  }
+  body .marca {
+    height: 2.7rem;
+  }
+  body video {
+    height: 14rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body h1 {
+    font-size: 1.45rem;
+  }
+  body h3 {
+    font-size: 1.25rem;
+  }
+  body p {
+    font-size: 1.05rem;
+  }
+  body a {
+    font-size: 1.07rem;
+  }
+  body .icono {
+    height: 2.1rem;
+  }
+  body .marca {
+    height: 2.75rem;
+  }
+  body video {
+    height: 15rem;
+  }
+}
+@media screen and (min-width: 1536px) {
+  body h1 {
+    font-size: 1.5rem;
+  }
+  body h3 {
+    font-size: 1.3rem;
+  }
+  body p {
+    font-size: 1.1rem;
+  }
+  body a {
+    font-size: 1.12rem;
+  }
+  body .icono {
+    height: 2.15rem;
+  }
+  body .marca {
+    height: 2.8rem;
+  }
+  body video {
+    height: 16rem;
+  }
+}/*# sourceMappingURL=variables.css.map */

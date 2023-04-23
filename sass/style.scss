@@ -26,7 +26,7 @@ a:hover{
 }
 .btn-c{
     background-color: #62d5c1;
-    padding: 1rem;
+    padding: 0.7rem;
     border-radius:10%;
     @media screen and (max-width:425px){
         padding: 0.5rem;
@@ -101,19 +101,20 @@ section {
 .footer{
 background-color: #dbfbf5;
 margin-top: 1rem;
-padding-bottom: 1rem;
+padding-bottom: 0.5rem;
 &__locales {
     background-color:#80e1d0;
+    @include mobile{background-color: #dbfbf5;} 
 }
-&__marcas li{
+&__marcas{
+    @include mobile {background-color:#80e1d0;
+    height: 3.5rem;}
+ li{
     display: flex;
     justify-content: center;
     align-items:center;
-    img{
-    width: 12rem;
-}}
+    }}
 &__icons li {
-    height: 2.5rem;
     display: flex;
     justify-content: center;
     img{
@@ -123,8 +124,8 @@ padding-bottom: 1rem;
     transform: scale(1.2,1.2);
     filter: brightness(0) saturate(100%) invert(48%) sepia(95%) saturate(991%) hue-rotate(131deg) brightness(100%) contrast(101%);
 }
-}
-}
+}}
+
 
  
 @media screen and (min-width:1440px){
@@ -139,25 +140,8 @@ padding-bottom: 1rem;
         .hero article{
             width: 90%;
         }
-        .icons li {
-            height: 2rem;
-        }
-        video{
-            height: 23vh;
-        }
     }
     @media screen and (max-width:767px) {
-        .marcas li img{
-            width: 10rem;
-        }
-        .locales{
-            background-color: #dbfbf5;
-        } 
-    
-        .marcas{
-            background-color:#80e1d0;
-            
-        }
         .nave__content{
             width: 100%;
         }

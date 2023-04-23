@@ -20,24 +20,32 @@
     }
 }
 $texto:(
-    h1:1rem,
-	h3:0.8rem,
-	p:0.54rem,
-    a:0.55rem 
+    h1:1.2rem,
+	h3:1rem,
+	p:0.8rem,
+    a:0.82rem 
 );
 $multimedia:(
-    video:7.5rem,
+    video:7.5rem
 );
-
-@for $i from 1 to 6 {
+$sponsors:(
+    icono: 1.85rem,
+    marca: 2.5rem
+);
+@for $i from 1 to 7 {
 $media:256px;
-$letra:0.85;
+$letra:0.95;
 $multi:0.5;
 @media screen and (min-width:#{$media *$i}){
     body{
     @each $elemnto, $rem in $texto {
         #{$elemnto} {
             font-size: $rem * 1 + ($i - $letra*$i);
+        }
+            }
+    @each $elemnto, $rem in $sponsors {
+        .#{$elemnto} {
+            height: $rem * 1 + ($i - $letra*$i) ;
         }
             }
 @if  $i <=2  {
