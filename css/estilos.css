@@ -95,6 +95,7 @@
   body video {
     height: 16rem; } }
 
+/*--Estilos Globales--*/
 * {
   margin: 0px;
   padding: 0px;
@@ -104,6 +105,9 @@ body {
   color: black;
   font-family: 'Koulen', cursive;
   font-family: 'Work Sans', sans-serif; }
+
+section {
+  overflow: hidden; }
 
 main {
   margin: 2rem 0px;
@@ -119,6 +123,9 @@ a {
 a:hover {
   transform: scale(0.9, 0.9); }
 
+li {
+  list-style-type: none; }
+
 .btn-c {
   background-color: #62d5c1;
   padding: 0.7rem;
@@ -127,15 +134,13 @@ a:hover {
     .btn-c {
       padding: 0.5rem; } }
 
-li {
-  list-style-type: none; }
-
-/*<Pagina Index>*/
-/*<Header>*/
 .nave {
   background-color: #dbfbf5; }
   .nave__content {
     width: 60%; }
+    @media screen and (max-width: 767px) {
+      .nave__content {
+        width: 100%; } }
   .nave__img {
     height: 3.5rem;
     width: 8rem;
@@ -144,39 +149,49 @@ li {
     border-radius: 5%;
     background-color: #62d5c1;
     padding: 1rem; }
+    @media screen and (max-width: 767px) {
+      .nave__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
 
-/*</header>*/
-/*<main>*/
-/*<hero>*/
 .hero {
   background-color: #45e4d1;
-  padding: 6rem  0rem;
-  width: 100%;
+  position: relative;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  .hero article {
+  align-items: center;
+  justify-content: center;
+  max-height: 30rem; }
+  .hero__fondo {
+    opacity: 0.1; }
+  .hero__texto {
+    position: absolute;
     width: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly; }
+    @media screen and (max-width: 1024px) {
+      .hero__texto {
+        width: 90%; } }
+    .hero__texto ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      @media screen and (max-width: 768px) {
+        .hero__texto ul {
+          display: none; } }
   .hero a {
     color: #0b6258;
     text-decoration-line: underline; }
 
-/*</header>*/
-section {
-  overflow: hidden; }
-
-.caja2 img {
-  height: 14rem; }
-
-.caja2 li {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
+/*<Pagina Index>*/
+/*<header>*/
+/*<hero>*/
+/*<main>*/
+/*<footer>*/
 .notic {
   display: grid;
   grid-template-rows: auto;
@@ -194,8 +209,20 @@ section {
     grid-area: vi2; }
   .notic #video3 {
     grid-area: vi3; }
+  @media screen and (min-width: 1440px) {
+    .notic {
+      grid-template: 1fr auto /1fr 1fr 1fr;
+      grid-template-areas: "titulo titulo titulo" "vi1      vi2    vi3";
+      justify-items: center; } }
+  @media screen and (max-width: 768px) {
+    .notic {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr;
+      grid-template-areas: "titulo" "vi1" "vi2" "vi3";
+      justify-items: center;
+      gap: 1rem; } }
 
-/*</Pagina index>*/
 .footer {
   background-color: #dbfbf5;
   margin-top: 1rem;
@@ -223,30 +250,21 @@ section {
       transform: scale(1.2, 1.2);
       filter: brightness(0) saturate(100%) invert(48%) sepia(95%) saturate(991%) hue-rotate(131deg) brightness(100%) contrast(101%); }
 
-@media screen and (min-width: 1440px) {
-  .notic {
-    grid-template: 1fr auto /1fr 1fr 1fr;
-    grid-template-areas: "titulo titulo titulo" "vi1      vi2    vi3";
-    justify-items: center; } }
+/*<Pagina Contacto*/
+.caja2 img {
+  height: 14rem; }
 
-@media screen and (max-width: 1024px) {
-  .hero article {
-    width: 90%; } }
+.caja2 li {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
-@media screen and (max-width: 767px) {
-  .nave__content {
-    width: 100%; }
-  .nave__link {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .notic {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr;
-    grid-template-areas: "titulo" "vi1" "vi2" "vi3";
-    justify-items: center;
-    gap: 1rem; } }
+/*<Pagina Productos>*/
+.main-productos {
+  margin-top: 70px; }
+
+.card {
+  max-width: 18rem; }
 
 @media screen and (max-width: 425px) {
   .img {
