@@ -44,7 +44,14 @@ li {
     background-color: #62d5c1;
     padding: 0.7rem;
     border-radius: 10%;
-
+    @media screen and (max-width:425px) {
+        padding: 0.5rem;
+    }
+}
+.btn-b {
+    background-color: #39a6ef;
+    padding: 0.7rem;
+    border-radius: 10%;
     @media screen and (max-width:425px) {
         padding: 0.5rem;
     }
@@ -223,13 +230,40 @@ li {
     }
 }
 /*<Pagina Productos>*/
+#body-productos{
+    background-color: #c6fff4;
+}
 .main-productos{
     margin-top: 70px;
 
 }
-.card{
+.carr{
     max-width: 18rem;
+background: rgb(114,255,230);
+background: -moz-linear-gradient(180deg, rgba(114,255,230,1) 0%, rgba(92,200,182,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(114,255,230,1) 0%, rgba(92,200,182,1) 100%);
+background: linear-gradient(180deg, rgba(114,255,230,1) 0%, rgba(92,200,182,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#72ffe6",endColorstr="#5cc8b6",GradientType=1);
 }
+.cartToCarr{
+   background-color:#80e1d0;
+}
+#trolley{
+    background-color: #62d5c1;  
+}
+.cart_Index {
+    
+    max-width: 40rem;
+    .carta__parrafo{
+        max-width: 55%;
+    }
+    @media screen and(max-width:1399px) {
+        margin-top: 2rem;  
+        justify-content: center;
+        .carta__parrafo{
+            max-width: 100%;
+        }
+    } }
 @media screen and (max-width:425px) {
     .img {
         opacity: 0.5;
