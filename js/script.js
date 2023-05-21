@@ -1,5 +1,98 @@
 //Creaciacion de obajetos//
-function Productos(id, categoria, producto, imagen, precio, stock, info, marca){
+const productos = [{
+        "id": 1,
+        "categoria":"Celular",
+        "producto":"Funda celular",
+        "imagen":"../images/fundas-C.png",
+        "precio": 400,
+        "stock": 35,
+        "description":"Protege tu celular de golpes y puedes encontrarlo en 2 diferentes estilos: blanco o negro, perfecto para modelos de Iphone 7/7 plus.",
+        "marca":"CeluWorld" 
+},{
+        "id": 2,
+        "categoria":"Computadora",
+        "producto":"Auriculares gamer",
+        "imagen":"../images/auricularG.png",
+        "precio": 5000,
+        "stock": 35,
+        "description": "Con los auriculares gamers VX70, llegó la hora de cambiar la experiencia con tus juegos, gracias a su sonido claro, potente y sus bajos inmersivos.",
+        "marca":"Tonet & Vndet" 
+},{
+        "id": 3,
+        "categoria":"Computadora",
+        "producto":"Mouse gamer",
+        "imagen":"../images/mausseG.png",
+        "precio": 3000,
+        "stock": 35,
+        "description":"Cualquier gamer experimentado conoce la importancia de un buen gaming mouse y aún más si su género favorito son los FPS (Shooters). Por eso te ofresemo MZ700.",
+        "marca":"Pro ZC" 
+},{
+        "id": 4,
+        "categoria":"Computadora",
+        "producto":"Teclado gamer",
+        "imagen":"../images/tecladoG.png",
+        "precio": 3500,
+        "stock": 35,
+        "description": "Si queres sentirte como verdadero gamer no te puede faltar un buen teclado, El TCvol 3 te permite jugar como vos quieras ya que es mecanico.",
+        "marca":"Ryzen" 
+},{
+        "id": 5,
+        "categoria":"Computadora",
+        "producto":"Silla gamer",
+        "imagen":"../images/sillaG.png",
+        "precio": 50000,
+        "stock": 35,
+        "description": "Si queres sentirte comodo la MY20 te va a dar la mejor sensacion de comodidad en el mercado, con asiento reclinable y apoya brazos.",
+        "marca":"Myzerus" 
+},{
+        "id": 6,
+        "categoria":"Computadora",
+        "producto":"Camara para PC",
+        "imagen":"../images/camaraG.png",
+        "precio": 8000,
+        "stock": 35,
+        "description": "Perfecta para reuniones o juntarte con tus amigos, con calidad full hd y con un lente de 128px permite grabar con una mejor resolucion.",
+        "marca": "Noga" 
+},{
+        "id": 7,
+        "categoria":"Computadora",
+        "producto":"Mouse game LG",
+        "imagen":"../images/mosueGLG.png",
+        "precio": 2500,
+        "stock": 35,
+        "description":"Un mouse simple y completo perfecto para los oficinistas y personas que quieren un buen producoto a un mejor precio.",
+        "marca": "Logitech" 
+},{
+        "id": 8,
+        "categoria":"Mueble",
+        "producto":"Soporte de Auriculares",
+        "imagen":"../images/soporteAG.png",
+        "precio": 2000,
+        "stock": 35,
+        "description":"Este soporte proporciona a tu Setup una mejora en cuanto a lo estetico y orden, con luces led y otras funciones te sentiras como un verdadero gamer",
+        "marca": "Corseir" 
+},{
+        "id": 9,
+        "categoria":"Mueble",
+        "producto":"Escritorio",
+        "imagen":"../images/escritorio.png",
+        "precio": 15000,
+        "stock": 35,
+        "description":"Este escritorio es perfecto para las oficionas o personas con gustos simples, posee mucho espacio tanto en la mesa como en los cajones, no te preocupes por la duracion ya que esta hecho con la madera de mejor calidad",
+        "marca": "MubGust" 
+},{
+        "id": 10,
+        "categoria":"Consola",
+        "producto": "Mando de PlayS",
+        "imagen":"../images/mandosG.png",
+        "precio": 4500,
+        "stock": 35,
+        "description": "Funciona tanto en PC como en consolas, con facil agarre no te preocupes por la comodidad, fabricado con los mejores materiales permite un rendimiento eficaz.",
+        "marca": "Noga" 
+}
+]
+
+/*function Productos(id, categoria, producto, imagen, precio, stock, info, marca){
         this.id = id;
         this.categoria = categoria; 
         this.producto = producto;
@@ -17,17 +110,35 @@ const productoA = new Productos (2, "Computadora", "Auriculares gamer", "../imag
 const productoM = new Productos (3, "Computadora","Mause gamer", "../images/mausseG.png", 2000, 45, "Cualquier gamer experimentado conoce la importancia de un buen gaming mouse y aún más si su género favorito son los FPS (Shooters). Por eso te ofresemo MZ700.", "Pro ZC")
 const productoT = new Productos (4, "Computadora","Teclado gamer", "../images/tecladoG.png", 1500, 35, "Si queres sentirte como verdadero gamer no te puede faltar un buen teclado, El TCvol 3 te permite jugar como vos quieras ya que es mecanico.", "Ryzen")
 const productoSG = new Productos (5,"Computadora", "Silla gamer", "../images/sillaG.png", 50000, 25, "Si queres sentirte comodo la MY20 te va a dar la mejor sensacion de comodidad en el mercado, con asiento reclinable y apoya brazos.", "Myzerus")
-const productos = [productoF, productoA, productoM, productoT, productoSG]
+const productos = [productoF, productoA, productoM, productoT, productoSG]*/
 const disponibles = productos.filter((el) => el.stock > 0);
-const productosCatalogo = disponibles.map((el) => el.producto)
+let productosCatalogo = disponibles.map((el) => el.producto)
+let productosP$ = disponibles.map((el) => el.precio)
+productosP$.sort((a,b) =>a - b)
+productosCatalogo.sort((a, b) => {
+        if (a > b) {
+            return 1;
+        }
+        if (a < b) {
+            return -1;
+        }
+        // a es igual a b
+        return 0;
+    })
+console.log(productosCatalogo)
 //Variables//
 trolley = [];
-let ids = []
+let ids = [];
 let categorias = "";
 //DOM//
 let trolleyList = document.getElementById("trolley-list")
 let inputcategoria = document.getElementById("categoria");
-let menuBtn = document.getElementById("btn-menu");
+let cate1 = document.getElementById("cate-1");
+let cate2 = document.getElementById("cate-2");
+let cate3 = document.getElementById("cate-3");
+let cate4 = document.getElementById("cate-4");
+let filter$ = document.getElementById("filter$");
+let filterAZ= document.getElementById("filterAZ");
 let deleteBtn = document.getElementById("btn-delete");
 let valueTotalList = document.getElementById("totalvalue");
 //Fucniones//
@@ -37,11 +148,12 @@ function cartas(cata){
         for (const produc of cata){
                 let card = document.createElement("div");
                 card.className = "card carr";
+                card.innerHTML = `<img src="${produc.imagen}" class="card-img-top" alt="${produc.producto}">`
                 let cardBody = document.createElement("div")
                 cardBody.className = "card-body"
-                cardBody.innerHTML =  `<img src="${produc.imagen}" class="card-img-top" alt="${produc.producto}">
+                cardBody.innerHTML =  `
                                        <h5 class="card-title"><strong>${produc.producto}</strong></h5>
-                                       <p class="card-text">${produc.precio}$</p>
+                                       <p class="card-text">$${produc.precio}</p>
                                        <p class="card-text">Stock: ${produc.stock}</p>`;
                 let blockBotton = document.createElement("div")
                 blockBotton.className = " d-flex justify-content-between"
@@ -81,7 +193,7 @@ function infoCart(event){
         console.log(item)
         Swal.fire({
                 title: 'Informacion',
-                text:`${item.producto}: ${item.info}`,
+                text:`${item.producto}: ${item.description}`,
                 footer: `<p>Marca: ${item.marca}</p>`,
                 imageUrl: `${item.imagen}`,
                 imageHeight: 300,
@@ -143,12 +255,39 @@ function calculoTotal(){
         
 }
 function filtrar(event){
+        let id = event.target.getAttribute("cate")
+        console.log(id)
+        let item = productos.filter ((producto) => {
+                return producto.categoria === id
+        })        
+        cartas(item)
+        /*
         const enter = event.key.toLowerCase();
         if(enter == "enter"){
         let categoriasDisponibles = disponibles.filter((el) => el.categoria.toUpperCase() == categorias.toUpperCase());
         console.log(inputcategoria.value)        
         cartas(categoriasDisponibles)      
-        }
+        }*/
+}
+function orderAZ(){
+        orderA = []
+        productosCatalogo.forEach((itemsid) =>{
+        const item = productos.find((producto) => {
+                return producto.producto == itemsid
+        })
+        orderA.push(item)
+        })
+        cartas(orderA)
+}
+function order$(){
+        orderP$ = []
+        productosP$.forEach((itemsid) =>{
+        const item = productos.find((producto) => {
+                return producto.precio === itemsid
+        })
+        orderP$.push(item)
+        })
+        cartas(orderP$)
 }
 function saveTrolley(){
         localStorage.setItem("trolley", JSON.stringify(trolley))
@@ -159,13 +298,22 @@ function loadTrolley(){
         }
         
 }
+
+        
+
 //DOM//
 loadTrolley()
 renderTrolley()
 cartas(disponibles);
 inputcategoria.onchange = () =>{categorias = inputcategoria.value};  
 inputcategoria.addEventListener("keydown", filtrar);
-menuBtn.addEventListener("click", () => {cartas(disponibles)});
+cate1.addEventListener("click", filtrar);
+cate2.addEventListener("click", filtrar);
+cate3.addEventListener("click", filtrar);
+cate4.addEventListener("click", filtrar);
+filterAZ.addEventListener("click", orderAZ);
+filter$.addEventListener("click", order$);
+//menuBtn.addEventListener("click", () => {cartas(disponibles)});
 deleteBtn.addEventListener("click", deleteTrolley)
 
 
@@ -190,6 +338,24 @@ function pregunta( producto , cost){
            alert(" Nuestro stock se encuentra limitado, ahora mismo solo contamos con " + producto["stock"] + " unidades.")
         }
 }
+
+
+const items = [
+        { name: 'Pikachu', price: 21 },
+        { name: 'Charmander', price: 37 },
+        { name: 'Pidgey', price: 45 },
+        { name: 'Squirtle', price: 60 }
+      ]
+    items.sort((a, b) => {
+        if (a.name > b.name) {
+            return 1;
+        }
+        if (a.name < b.name) {
+            return -1;
+        }
+        // a es igual a b
+        return 0;
+    })
 /*let inicio = prompt("Hola ¿Como estas? Quieres comprar algun producto. Si || No");
 while(inicio.toUpperCase() == "SI" ){
         let menu = prompt("Nuestros productos: \n" + productosCatalogo.join("\n") );

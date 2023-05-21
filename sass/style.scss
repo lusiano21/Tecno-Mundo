@@ -27,38 +27,67 @@ main {
 a {
     text-decoration: none;
     color: black;
-    transform: scale(1, 1);
-    transition: transform 1s;
+    //transform: scale(1, 1);
+    //transition: transform 1s;
 }
 
-a:hover {
+/*a:hover {
     transform: scale(0.9, 0.9);
 
-}
+}*/
 
 li {
     list-style-type: none;
 }
+.btn-f{
+    margin: 0.2rem;
+    width: 6rem;
+    border: 1px;
+    background-color: #dbfbf5;
+    border-color: #45e4d1;
+    border-style:solid ;
+}
+
+.block-F{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    &_btn-f{
+        margin:0rem 1rem;
+    border: 1px;
+    background-color: #dbfbf5;
+    border-color: #45e4d1;
+    border-style:solid ;
+    border-radius: 10%;
+}
+}
 
 .btn-c {
-    background-color: #62d5c1;
-    padding: 0.7rem;
+    background-color:#62d5c1;
+    padding: 0.5rem;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
     border-radius: 10%;
     @media screen and (max-width:425px) {
-        padding: 0.5rem;
+        padding: 0.4rem;
     }
 }
 .btn-b {
     background-color: #39a6ef;
-    padding: 0.7rem;
+    padding: 0.5rem 1rem;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
     border-radius: 10%;
     @media screen and (max-width:425px) {
-        padding: 0.5rem;
+        padding: 0.4rem;
     }
 }
 
 .nave {
-    background-color: #dbfbf5;
+    background-color:#c9fbf2;
 
     &__content {
         width: 60%;
@@ -73,14 +102,39 @@ li {
         width: 8rem;
         margin: 1rem;
     }
-
     &__link {
+        position: relative;
+        padding: 1rem 2rem;
         border-radius: 5%;
-        background-color: #62d5c1;
-        padding: 1rem;
+        transition: all 200ms ease;
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 15%;
+            width: 100%;
+            background-color: #45e4d1;
+            opacity: 0;
+            transition: all 200ms ease;
+        }
+        @include mobile {
 
-        @media screen and (max-width:767px) {
+            margin: 0 30vw;
+            padding: 1rem 32px;
+            border-radius: 0;
             @include flex-column-center;
+            &::before{
+                left: 0;
+                height: 100%;
+                width: 4px;
+            }
+        }
+        &:hover{
+            background-color: #80e1d0;
+            &::before{
+                opacity: 1;
+            }
         }
     }
 }
@@ -92,7 +146,6 @@ li {
     @include flex-column-center;
     justify-content: center;
     max-height: 30rem;
-
     &__fondo {
         opacity: 0.1;
 
@@ -206,7 +259,6 @@ li {
     &__icons li {
         display: flex;
         justify-content: center;
-
         img {
             transform: scale(1, 1);
             transition: transform 1s;
@@ -231,25 +283,46 @@ li {
 }
 /*<Pagina Productos>*/
 #body-productos{
-    background-color: #c6fff4;
+    background-color: #e9fffb;
 }
 .main-productos{
     margin-top: 70px;
-
 }
+.nav-P{
+    background-color: #e9fffb;
+    padding: 0;
+&_navFilter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}}
 .carr{
-    max-width: 18rem;
-background: rgb(114,255,230);
+max-width: 18rem;
+margin: 1rem 0rem;
+background-color: #80e1d0;
+& img{
+   background: rgb(114,255,230);
 background: -moz-linear-gradient(180deg, rgba(114,255,230,1) 0%, rgba(92,200,182,1) 100%);
 background: -webkit-linear-gradient(180deg, rgba(114,255,230,1) 0%, rgba(92,200,182,1) 100%);
 background: linear-gradient(180deg, rgba(114,255,230,1) 0%, rgba(92,200,182,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#72ffe6",endColorstr="#5cc8b6",GradientType=1);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#72ffe6",endColorstr="#5cc8b6",GradientType=1); 
+}
+
+@include mobile{
+    max-width: 12rem;
+}
+@include tablet{
+    max-width: 15rem;
+}
 }
 .cartToCarr{
    background-color:#80e1d0;
 }
 #trolley{
-    background-color: #62d5c1;  
+    background-color: #62d5c1; 
+    margin: 1rem 0rem; 
 }
 .cart_Index {
     
