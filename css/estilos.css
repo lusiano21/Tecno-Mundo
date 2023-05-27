@@ -168,23 +168,23 @@ li {
     .btn-b {
       padding: 0.4rem; } }
 
-.nave {
+.navBar {
   background-color: #c9fbf2; }
-  .nave__content {
+  .navBar_content {
     width: 60%; }
     @media screen and (max-width: 767px) {
-      .nave__content {
+      .navBar_content {
         width: 100%; } }
-  .nave__img {
+  .navBar_img {
     height: 3.5rem;
     width: 8rem;
     margin: 1rem; }
-  .nave__link {
+  .navBar_link {
     position: relative;
     padding: 1rem 2rem;
     border-radius: 5%;
     transition: all 200ms ease; }
-    .nave__link::before {
+    .navBar_link::before {
       content: "";
       position: absolute;
       bottom: 0;
@@ -195,20 +195,20 @@ li {
       opacity: 0;
       transition: all 200ms ease; }
     @media screen and (max-width: 768px) {
-      .nave__link {
+      .navBar_link {
         margin: 0 30vw;
         padding: 1rem 32px;
         border-radius: 0;
         display: flex;
         flex-direction: column;
         align-items: center; }
-        .nave__link::before {
+        .navBar_link::before {
           left: 0;
           height: 100%;
           width: 4px; } }
-    .nave__link:hover {
+    .navBar_link:hover {
       background-color: #80e1d0; }
-      .nave__link:hover::before {
+      .navBar_link:hover::before {
         opacity: 1; }
 
 .hero {
@@ -306,6 +306,28 @@ li {
       transform: scale(1.2, 1.2);
       filter: brightness(0) saturate(100%) invert(48%) sepia(95%) saturate(991%) hue-rotate(131deg) brightness(100%) contrast(101%); }
 
+.cart_Index {
+  max-width: 40rem; }
+  .cart_Index .carta__parrafo {
+    max-width: 55%; }
+  @media screen and (max-width: 1399px) {
+    .cart_Index {
+      margin-top: 2rem;
+      justify-content: center; }
+      .cart_Index .carta__parrafo {
+        max-width: 100%; } }
+
+@media screen and (max-width: 425px) {
+  .img {
+    opacity: 0.5; }
+  .carta {
+    position: relative; }
+  .carta__texto {
+    height: 100%;
+    position: absolute; }
+  .carta__parrafo {
+    display: none; } }
+
 /*<Pagina Contacto*/
 .caja2 img {
   height: 14rem; }
@@ -322,14 +344,20 @@ li {
 .main-productos {
   margin-top: 70px; }
 
-.nav-P {
+.navBar_find {
   background-color: #e9fffb;
   padding: 0; }
-  .nav-P_navFilter {
+  .navBar_find-navFilter {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap; }
+
+.findCNull {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
 
 .carr {
   max-width: 18rem;
@@ -367,12 +395,12 @@ li {
         max-width: 100%; } }
 
 @media screen and (max-width: 425px) {
-  .img {
-    opacity: 0.5; }
   .carta {
     position: relative; }
-  .carta__texto {
-    height: 100%;
-    position: absolute; }
-  .carta__parrafo {
-    display: none; } }
+    .carta-img {
+      opacity: 0.5; }
+    .carta_texto {
+      height: 100%;
+      position: absolute; }
+    .carta_parrafo {
+      display: none; } }

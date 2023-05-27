@@ -1,0 +1,93 @@
+[
+    {
+    "id": 1,
+    "categoria":"Celulares",
+    "producto":"Funda de celular",
+    "imagen":"../images/fundas-C.png",
+    "precio": 400,
+    "stock": 35,
+    "description":"Protege tu celular de golpes y puedes encontrarlo en 2 diferentes estilos: blanco o negro, perfecto para modelos de Iphone 7/7 plus.",
+    "marca":"CeluWorld" 
+},{
+    "id": 2,
+    "categoria":"PC",
+    "producto":"Auriculares gamer",
+    "imagen":"../images/auricularG.png",
+    "precio": 5000,
+    "stock": 35,
+    "description": "Con los auriculares gamers VX70, llegó la hora de cambiar la experiencia con tus juegos, gracias a su sonido claro, potente y sus bajos inmersivos.",
+    "marca":"Tonet & Vndet" 
+},{
+    "id": 3,
+    "categoria":"PC",
+    "producto":"Mouse gamer",
+    "imagen":"../images/mausseG.png",
+    "precio": 3000,
+    "stock": 35,
+    "description":"Cualquier gamer experimentado conoce la importancia de un buen gaming mouse y aún más si su género favorito son los FPS (Shooters). Por eso te ofresemo MZ700.",
+    "marca":"Pro ZC" 
+},{
+    "id": 4,
+    "categoria":"PC",
+    "producto":"Teclado gamer",
+    "imagen":"../images/tecladoG.png",
+    "precio": 3500,
+    "stock": 35,
+    "description": "Si queres sentirte como verdadero gamer no te puede faltar un buen teclado, El TCvol 3 te permite jugar como vos quieras ya que es mecanico.",
+    "marca":"Ryzen" 
+},{
+    "id": 5,
+    "categoria":"PC",
+    "producto":"Silla gamer",
+    "imagen":"../images/sillaG.png",
+    "precio": 50000,
+    "stock": 35,
+    "description": "Si queres sentirte comodo la MY20 te va a dar la mejor sensacion de comodidad en el mercado, con asiento reclinable y apoya brazos.",
+    "marca":"Myzerus" 
+},{
+    "id": 6,
+    "categoria":"PC",
+    "producto":"Camara para PC",
+    "imagen":"../images/camaraG.png",
+    "precio": 8000,
+    "stock": 35,
+    "description": "Perfecta para reuniones o juntarte con tus amigos, con calidad full hd y con un lente de 128px permite grabar con una mejor resolucion.",
+    "marca": "Noga" 
+},{
+    "id": 7,
+    "categoria":"PC",
+    "producto":"Mouse gamer LG",
+    "imagen":"../images/mosueGLG.png",
+    "precio": 2500,
+    "stock": 35,
+    "description":"Un mouse simple y completo perfecto para los oficinistas y personas que quieren un buen producoto a un mejor precio.",
+    "marca": "Logitech" 
+},{
+    "id": 8,
+    "categoria":"Muebles",
+    "producto":"Soporte de Auriculares",
+    "imagen":"../images/soporteAG.png",
+    "precio": 2000,
+    "stock": 35,
+    "description":"Este soporte proporciona a tu Setup una mejora en cuanto a lo estetico y orden, con luces led y otras funciones te sentiras como un verdadero gamer",
+    "marca": "Corseir" 
+},{
+    "id": 9,
+    "categoria":"Muebles",
+    "producto":"Escritorio",
+    "imagen":"../images/escritorio.png",
+    "precio": 15000,
+    "stock": 35,
+    "description":"Este escritorio es perfecto para las oficionas o personas con gustos simples, posee mucho espacio tanto en la mesa como en los cajones, no te preocupes por la duracion ya que esta hecho con la madera de mejor calidad",
+    "marca": "MubGust" 
+},{
+    "id": 10,
+    "categoria":"Consolas",
+    "producto": "Mando de Play",
+    "imagen":"../images/mandosG.png",
+    "precio": 4500,
+    "stock": 35,
+    "description": "Funciona tanto en PC como en consolas, con facil agarre no te preocupes por la comodidad, fabricado con los mejores materiales permite un rendimiento eficaz.",
+    "marca": "Noga" 
+}
+]

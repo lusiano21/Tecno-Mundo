@@ -86,10 +86,10 @@ li {
     }
 }
 
-.nave {
+.navBar {
     background-color:#c9fbf2;
 
-    &__content {
+    &_content {
         width: 60%;
 
         @media screen and (max-width:767px) {
@@ -97,12 +97,12 @@ li {
         }
     }
 
-    &__img {
+    &_img {
         height: 3.5rem;
         width: 8rem;
         margin: 1rem;
     }
-    &__link {
+    &_link {
         position: relative;
         padding: 1rem 2rem;
         border-radius: 5%;
@@ -270,62 +270,7 @@ li {
         }
     }
 }
-
-/*<Pagina Contacto*/
-.caja2 img {
-    height: 14rem;
-}
-
-.caja2 {
-    & li {
-        @include flex-column-center;
-    }
-}
-/*<Pagina Productos>*/
-#body-productos{
-    background-color: #e9fffb;
-}
-.main-productos{
-    margin-top: 70px;
-}
-.nav-P{
-    background-color: #e9fffb;
-    padding: 0;
-&_navFilter{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-}}
-.carr{
-max-width: 18rem;
-margin: 1rem 0rem;
-background-color: #80e1d0;
-& img{
-   background: rgb(114,255,230);
-background: -moz-linear-gradient(180deg, rgba(114,255,230,1) 0%, rgba(92,200,182,1) 100%);
-background: -webkit-linear-gradient(180deg, rgba(114,255,230,1) 0%, rgba(92,200,182,1) 100%);
-background: linear-gradient(180deg, rgba(114,255,230,1) 0%, rgba(92,200,182,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#72ffe6",endColorstr="#5cc8b6",GradientType=1); 
-}
-
-@include mobile{
-    max-width: 12rem;
-}
-@include tablet{
-    max-width: 15rem;
-}
-}
-.cartToCarr{
-   background-color:#80e1d0;
-}
-#trolley{
-    background-color: #62d5c1; 
-    margin: 1rem 0rem; 
-}
 .cart_Index {
-    
     max-width: 40rem;
     .carta__parrafo{
         max-width: 55%;
@@ -353,5 +298,92 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#72ffe6",endCo
 
     .carta__parrafo {
         display: none;
+    }
+}
+/*<Pagina Contacto*/
+.caja2 img {
+    height: 14rem;
+}
+
+.caja2 {
+    & li {
+        @include flex-column-center;
+    }
+}
+/*<Pagina Productos>*/
+#body-productos{
+    background-color: #e9fffb;
+}
+.main-productos{
+    margin-top: 70px;
+}
+.navBar_find{
+    background-color: #e9fffb;
+    padding: 0;
+&-navFilter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}}
+.findCNull{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.carr{
+max-width: 18rem;
+margin: 1rem 0rem;
+background-color: #80e1d0;
+& img{
+   background: rgb(114,255,230);
+background: -moz-linear-gradient(180deg, rgba(114,255,230,1) 0%, rgba(92,200,182,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(114,255,230,1) 0%, rgba(92,200,182,1) 100%);
+background: linear-gradient(180deg, rgba(114,255,230,1) 0%, rgba(92,200,182,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#72ffe6",endColorstr="#5cc8b6",GradientType=1); 
+}
+
+@include mobile{
+    max-width: 12rem;
+}
+@include tablet{
+    max-width: 15rem;
+}
+}
+.cartToCarr{
+   background-color:#80e1d0;
+}
+#trolley{
+    background-color: #62d5c1; 
+    margin: 1rem 0rem; 
+}
+.cart_Index {
+    max-width: 40rem;
+    .carta__parrafo{
+        max-width: 55%;
+    }
+    @media screen and(max-width:1399px) {
+        margin-top: 2rem;  
+        justify-content: center;
+        .carta__parrafo{
+            max-width: 100%;
+        }
+    } }
+@media screen and (max-width:425px) {
+    .carta {
+        position: relative;
+        &-img{
+            opacity: 0.5;
+        }
+        &_texto {
+        height: 100%;
+        position: absolute;
+       }
+
+       &_parrafo {
+        display: none;
+       }
     }
 }
