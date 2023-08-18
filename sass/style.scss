@@ -1,5 +1,4 @@
 @import "./variables/variables.scss";
-@import "./pages/productos";
 
 /*--Estilos Globales--*/
 * {
@@ -90,9 +89,8 @@ li {
     background-color:#c9fbf2;
 
     &_content {
-        width: 60%;
-
-        @media screen and (max-width:767px) {
+        width: 75%;
+        @media screen and (max-width:768px) {
             width: 100%;
         }
     }
@@ -119,9 +117,8 @@ li {
             transition: all 200ms ease;
         }
         @include mobile {
-
             margin: 0 30vw;
-            padding: 1rem 32px;
+            padding: 0.5rem 32px;
             border-radius: 0;
             @include flex-column-center;
             &::before{
@@ -300,6 +297,45 @@ li {
         display: none;
     }
 }
+/*<Pagina Soporte>*/
+.card-soporte {
+    margin-top: 2rem;
+    width: 100%;
+    &-img {
+        height: 20rem;
+    }
+    &-body{
+        width: 20rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &-icono{
+            height: 1.5rem;
+        }
+    }
+    @media screen and (max-width:825px) {
+        flex-direction: column;
+    }
+}
+.card-ubicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-body{
+        padding: 0.5rem;
+    }
+    @media screen and (max-width:825px) {
+        flex-direction: column;
+    }
+    & iframe{
+        width: 75%;
+        @media screen and (max-width:825px) {
+            width: 95%;
+        }
+    }
+}
 /*<Pagina Contacto*/
 .caja2 img {
     height: 14rem;
@@ -308,6 +344,82 @@ li {
 .caja2 {
     & li {
         @include flex-column-center;
+    }
+}
+/*<Pagina Servicios>*/
+.hero-servicio{
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & div{
+        width: 50%;
+        @media screen and (max-width:1024px) {
+            width: 75%;
+        }
+    }
+}
+.card-servicio{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width:1024px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.form-servicio{
+    display: flex;
+    margin-bottom: 5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#controlInputFile{
+    display: none;
+}
+#controlLabelFile{
+    height: 20rem;
+    width: 25rem;
+    border-radius: 6px;
+    border: 1px dashed #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width:768px) {
+        width: 10rem;
+        height: 5rem;
+    }
+}
+/*<Pagina Informacion>*/
+.body-informacion{
+    background-color: #e9fffb;
+}
+.card-informacion{
+    padding-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & img{
+            max-height: 15rem;
+        }
+    }
+    &-body{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (max-width: 768px) {
+            width: 75%;
+        }
     }
 }
 /*<Pagina Productos>*/
