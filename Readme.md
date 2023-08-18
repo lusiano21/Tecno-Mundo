@@ -10,7 +10,7 @@ Es una página en la que se aplica algoritmos de compra y fetch para obtener inf
 [Tienda Mundo: Registro](https://mi-pagina-1.vercel.app/pages/contacto.html)
 
 #### Tecnologias Implementadas
-HTML, CSS, SASS, JavaScript, FireBase
+HTML, CSS, SASS, JavaScript
 
 
 
