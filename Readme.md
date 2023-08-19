@@ -1,4 +1,4 @@
-## Mi pagina Nro 1: Tienda Mundo
+## Mi pagina Nro 1: Tecno Mundo
 [Tienda Mundo](https://mi-pagina-1.vercel.app/)
 ### Descripcion
 Se treta de una pagina que te permite comprar articulos en su mayoria gamers para la gente fanatica de los juegos y que quieren los productos de mas alta calidad para un mejor rendimiento en sus partidas. 
